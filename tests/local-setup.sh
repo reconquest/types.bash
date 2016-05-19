@@ -1,1 +1,1 @@
-tests:involve ../types.bash
+tests:involve types.bash
