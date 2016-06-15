@@ -5,3 +5,6 @@ tests:not tests:ensure types:is-assoc-array int_var
 
 typeset -A array_var_2
 tests:ensure types:is-assoc-array array_var_2
+
+typeset -xrluA array_var_3
+tests:ensure types:is-assoc-array array_var_3

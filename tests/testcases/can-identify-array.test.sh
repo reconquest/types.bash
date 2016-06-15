@@ -8,3 +8,6 @@ tests:ensure types:is-array array_var_1
 
 typeset -a array_var_2
 tests:ensure types:is-array array_var_2
+
+typeset -xlura array_var_3
+tests:ensure types:is-array array_var_3
