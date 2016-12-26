@@ -4,7 +4,7 @@ function types:is-assoc-array() {
         return 1
     fi >&2
 
-    declare -pA | grep -q "^declare -A[^ ]* $1"
+    declare -pA | grep -Eq "^declare -A[^ ]* $1=?"
 }
 
 function types:is-array() {
@@ -13,5 +13,5 @@ function types:is-array() {
         return 1
     fi >&2
 
-    declare -pa | grep -q "^declare -a[^ ]* $1"
+    declare -pa | grep -Eq "^declare -a[^ ]* $1=?"
 }
